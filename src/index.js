@@ -1,7 +1,9 @@
 var Random = require('random-js');
 
+var MIN = 0, MAX = 100;
+
 module.exports = {
   bingo: function () {
-    console.log('#' + Random.integer(0,100)(Random.engines.nativeMath));
+    return Random.integer(MIN, MAX)(Random.engines.nativeMath);
   }
 };
