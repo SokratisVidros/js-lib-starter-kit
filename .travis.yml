@@ -1,0 +1,6 @@
+language: node_js
+script: "npm run test:single"
+node_js:
+  - "stable"
+  - "4.1"
+  - "4.0"
