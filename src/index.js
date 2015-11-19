@@ -1,9 +1,8 @@
-var Random = require('random-js');
+import Random from 'random-js';
 
-var MIN = 0, MAX = 100;
+const MIN = 0,
+      MAX = 100;
 
-module.exports = {
-  bingo: function () {
-    return Random.integer(MIN, MAX)(Random.engines.nativeMath);
-  }
-};
+export function bingo () {
+  return Random.integer(MIN, MAX)(Random.engines.nativeMath);
+}
